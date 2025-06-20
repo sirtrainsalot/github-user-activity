@@ -1,1 +1,0 @@
-(ns github-user-activity.fk-core)
