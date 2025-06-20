@@ -1,0 +1,21 @@
+# compiled class files
+*.class
+
+# temporary files
+*.swp
+*~
+
+# Clojure output directories
+target/
+out/
+
+# REPL history
+.repl-history
+
+# IDE/editor config
+.idea/
+*.iml
+
+# OS generated files
+.DS_Store
+Thumbs.db
