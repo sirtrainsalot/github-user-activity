@@ -1,20 +1,28 @@
+# Clojure/deps
+.cpcache/
+.nrepl-port
+
+# IntelliJ / Cursive
+.idea/
+*.iml
+
 # compiled class files
 *.class
 
 # temporary files
 *.swp
+*.log
 *~
 
 # Clojure output directories
 target/
 out/
 
+# ClojureScript output (hvis aktuelt senere)
+resources/public/js/compiled/
+
 # REPL history
 .repl-history
-
-# IDE/editor config
-.idea/
-*.iml
 
 # OS generated files
 .DS_Store
