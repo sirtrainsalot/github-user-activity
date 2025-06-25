@@ -1,4 +1,2 @@
 {:paths ["src"]
- :deps {
-        org.clojure/data.json {:mvn/version "2.5.0"}
-        }}
+ :deps {}}
