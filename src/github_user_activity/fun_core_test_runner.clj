@@ -38,18 +38,15 @@
 ;; Tester ---------
 
 (defn test-get-username []
-  (let [test-name "get-username"]
-    (print-test-title test-name)
-    ;; test uten args
-    (check-content-println "get-username uten args" #(get-username []) "Usage: github-activity <username>")
+  (print-test-title "get-username")
+  ;; test uten args
+  (check-content-println "get-username uten args" #(get-username []) "Usage: github-activity <username>")
 
-    ;; test med args
-    (check-content "get-username med args" (get-username ["username"]) "username")
+  ;; test med args
+  (check-content "get-username med args" (get-username ["username"]) "username")
 
-    ;; test med flere args kun første input returneres
-    (check-content "get-username med flere args" (get-username ["username1" "username2"]) "username2")
-    )
-  )
+  ;; test med flere args kun første input returneres
+  (check-content "get-username med flere args" (get-username ["username1" "username2"]) "username1"))
 
 
 (defn -main [& _]
